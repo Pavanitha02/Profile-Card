@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Showcase Box</title>
+  <style>
+    body {
+      background: #f6f8fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .product-showcase {
+      width: 500px;
+      height: 600px;
+      background: #fff;
+      border: 3px solid #d3d3d3;
+      border-radius: 24px;
+      box-shadow: 0 8px 22px rgba(40,40,40,0.10);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px 28px;
+      margin: 10px;
+      position: relative;
+    }
+    .product-img {
+      width: 100%;
+      max-height: 260px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border-radius: 9px;
+      display: block;
+    }
+    .wishlist {
+      position: absolute;
+      right: 40px;
+      top: 35px;
+      font-size: 1.7rem;
+      color: #c0c5ca;
+    }
+    .product-title {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #242424;
+      margin-bottom: 6px;
+      text-align: left;
+      width: 100%;
+    }
+    .product-sub {
+      color: #7d7d7d;
+      font-size: 1.06rem;
+      margin-bottom: 10px;
+    }
+    .product-rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+    }
+    .rating-box {
+      background: #2cc662;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 2px 8px;
+      border-radius: 7px;
+      margin-right: 5px;
+      display: flex;
+      align-items: center;
+    }
+    .rating-count {
+      margin-left: 7px;
+      font-size: 1rem;
+      color: #777;
+    }
+    .assured {
+      margin-left: 8px;
+      height: 23px;
+      vertical-align: middle;
+    }
+    .price-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+    .product-newprice {
+      font-size: 1.7rem;
+      color: #222;
+      font-weight: 700;
+      margin-right: 11px;
+    }
+    .product-oldprice {
+      font-size: 1.13rem;
+      color: #a7a7a7;
+      text-decoration: line-through;
+      margin-right: 12px;
+      font-weight: 500;
+    }
+    .product-off {
+      font-size: 1.1rem;
+      color: #2cc662;
+      font-weight: 600;
+    }
+    .product-offer {
+      font-size: 1.18rem;
+      color: #17b43d;
+      margin-top: 7px;
+      margin-bottom: 0px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-showcase">
+    <span class="wishlist">&#10084;</span>
+    <img class="product-img"
+      src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/w/x/h/-original-imahfa7xspmxemvj.jpeg">
+      alt="SAMSUNG Galaxy Watch6 LTE">
+    <div class="product-title">SAMSUNG Galaxy Watch6 LTE</div>
+    <div class="product-sub">Graphite Strap, 44mm</div>
+    <div class="product-rating">
+      <span class="rating-box">4.3 &#9733;</span>
+      <span class="rating-count">(973)</span>
+      <img class="assured" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="Assured icon">
+    </div>
+    <div class="price-row">
+      <span class="product-newprice">₹18,999</span>
+      <span class="product-oldprice">₹41,999</span>
+      <span class="product-off">54% off</span>
+    </div>
+    <div class="product-offer">Bank Offer</div>
+  </div>
+</body>
+</html>
